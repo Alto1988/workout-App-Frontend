@@ -3,7 +3,6 @@ import React from 'react';
 import { useQuery } from 'react-apollo';
 
 
-
 const QUERY_USERS = gql`
 query{
   users{
@@ -16,7 +15,6 @@ query{
 
 
 export const UsersInfo = () => {
-
   const { data, loading } = useQuery(
     QUERY_USERS, {
     pollInterval: 5000
